@@ -73,7 +73,7 @@ export default function HeroDualSplit({
     proceso_electoral.election_date,
   );
   return (
-    <section className="relative pt-16 w-full flex flex-col bg-background md:h-[calc(100vh-4rem)] md:max-h-[900px] overflow-hidden rounded-md border border-border/40">
+    <section className="relative pt-16 w-full flex flex-col bg-background md:h-auto md:max-h-[1200px] overflow-hidden rounded-md border border-border/40">
       {/* ============= FONDOS ============= */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -182,8 +182,8 @@ export default function HeroDualSplit({
             <div className="relative w-full md:w-1/2 flex overflow-hidden group border-r border-white/10">
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
 
-              <div className="relative z-10 flex flex-col justify-end w-full text-white p-4 md:p-8 py-6 md:py-10 pb-8 md:pb-12">
-                <div className="md:max-w-md ml-auto text-center md:text-right flex flex-col items-center md:items-end">
+              <div className="relative z-10 flex flex-col justify-start w-full text-white p-4 md:p-8 py-6 md:py-10 pb-8 md:pb-12">
+                <div className="md:max-w-md mx-auto md:mr-0 md:ml-auto text-center md:text-right flex flex-col items-center md:items-end">
                   {/* Icono neutro */}
                   <div className="w-12 h-12 md:w-14 md:h-14 mb-4 rounded-xl flex items-center justify-center bg-white/10 border border-white/20 backdrop-blur-sm">
                     <Users className="w-6 h-6 md:w-7 md:h-7 text-white" />
@@ -225,8 +225,8 @@ export default function HeroDualSplit({
               {/* CAMBIO: Eliminado el tinte verde (success/10). Usamos un tinte brand muy sutil o negro neutro. */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-brand/5 to-transparent pointer-events-none" />
 
-              <div className="relative z-10 flex flex-col justify-end w-full text-white p-4 md:p-8 py-6 md:py-10 pb-8 md:pb-12">
-                <div className="md:max-w-md mr-auto text-center md:text-left flex flex-col items-center md:items-start">
+              <div className="relative z-10 flex flex-col justify-start w-full text-white p-4 md:p-8 py-6 md:py-10 pb-8 md:pb-12">
+                <div className="md:max-w-md mx-auto md:ml-0 md:mr-auto text-center md:text-left flex flex-col items-center md:items-start">
                   {/* CAMBIO: Icono usa el color brand en lugar de warning */}
                   <div className="w-12 h-12 md:w-14 md:h-14 mb-4 rounded-xl flex items-center justify-center bg-background/10 border border-white/30 backdrop-blur-sm">
                     <Columns className="w-6 h-6 md:w-7 md:h-7 text-brand" />
