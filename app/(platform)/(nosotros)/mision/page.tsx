@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/landing/footer";
 import { ContentPlatformLayout } from "@/components/navbar/content-layout";
+import FooterNew from "@/components/landing/footer-new";
 
 export default function MissionPage() {
   return (
@@ -125,7 +126,7 @@ export default function MissionPage() {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </section>
     </ContentPlatformLayout>
   );

@@ -4,6 +4,7 @@ import TeamList from "@/app/(platform)/(nosotros)/equipo/_components/team-list";
 import { getTeam, type TeamMember } from "@/queries/public/team";
 import Footer from "@/components/landing/footer";
 import { ContentPlatformLayout } from "@/components/navbar/content-layout";
+import FooterNew from "@/components/landing/footer-new";
 
 export default async function TeamPage() {
   let team: TeamMember[] = [];
@@ -42,7 +43,7 @@ export default async function TeamPage() {
           </div>
         </section>
 
-        <Footer />
+        <FooterNew />
       </section>
     </ContentPlatformLayout>
   );

@@ -6,6 +6,7 @@ import HeroDualSplit from "@/components/landing/hero-dual-split";
 // import ComparadorServer from "@/components/comparador/comparador-server";
 // import HemiclicleLegislator from "@/components/landing/hemicicle";
 import Footer from "@/components/landing/footer";
+import FooterNew from "@/components/landing/footer-new";
 import PartidosListBasic from "@/components/landing/partidos-list-basic";
 import { getPartidosList } from "@/queries/public/parties";
 import { getElectoralProcess } from "@/queries/public/electoral-process";
@@ -106,7 +107,7 @@ export default async function VotaBienPage() {
         {/* <HemiclicleLegislator seatsData={seatsData} /> */}
 
         <PartidosListBasic partidos={partidos.items} />
-        <Footer />
+        <FooterNew />
       </ContentPlatformLayout>
     );
   } catch (error) {
