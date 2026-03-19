@@ -884,7 +884,7 @@ export type Database = {
           popular_election: Json | null;
           postgraduate_education: Json;
           profession: string | null;
-          sanction_status: string | null;
+          reinfo_status: string | null;
           secondary_school: boolean | null;
           technical_education: Json | null;
           tiktok_url: string | null;
@@ -922,7 +922,7 @@ export type Database = {
           popular_election?: Json | null;
           postgraduate_education?: Json;
           profession?: string | null;
-          sanction_status?: string | null;
+          reinfo_status?: string | null;
           secondary_school?: boolean | null;
           technical_education?: Json | null;
           tiktok_url?: string | null;
@@ -960,7 +960,7 @@ export type Database = {
           popular_election?: Json | null;
           postgraduate_education?: Json;
           profession?: string | null;
-          sanction_status?: string | null;
+          reinfo_status?: string | null;
           secondary_school?: boolean | null;
           technical_education?: Json | null;
           tiktok_url?: string | null;
